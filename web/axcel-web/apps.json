@@ -1,0 +1,20 @@
+[
+  {
+    "name": "download-dialog",
+    "entry": "download-dialog.tsx",
+    "workers": [
+      {
+        "name": "append.worker",
+        "entry": "append.worker.ts"
+      },
+      {
+        "name": "download.hls.worker",
+        "entry": "download.hls.worker.ts"
+      },
+      {
+        "name": "download.worker",
+        "entry": "download.worker.ts"
+      }
+    ]
+  }
+]

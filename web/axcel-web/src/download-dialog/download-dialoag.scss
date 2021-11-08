@@ -1,0 +1,54 @@
+.download-dialog-container {
+  margin-top: 28px;
+  height: calc(100vh - 28px);
+  overflow: hidden;
+}
+
+.download-dialog-progress-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+.download-dialog-filename {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  font-size: 14px;
+  margin-top: 0px;
+}
+
+.download-dialog-button-container {
+  margin-bottom: 8px;
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  column-gap: 5px;
+}
+
+.download-dialog-overall-progress-container {
+  margin: 8px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.fragment {
+  width: 100%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

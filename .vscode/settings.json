@@ -1,0 +1,4 @@
+{
+  "liveServer.settings.port": 5501,
+  "rust-analyzer.linkedProjects": ["./desktop/launcher-rs/src-tauri/Cargo.toml"]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "dev": "lerna run dev",
+    "dev:package": "lerna run dev:package",
+    "build": "lerna run build",
+    "package": "lerna run --scope @pownthep/launcher package"
+  },
+  "workspaces": [
+    "packages/*",
+    "desktop/*",
+    "web/*",
+    "chrome-extension/*"
+  ],
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}

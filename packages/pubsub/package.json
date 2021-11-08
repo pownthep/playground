@@ -1,0 +1,35 @@
+{
+  "name": "@pownthep/pubsub",
+  "version": "1.0.0",
+  "description": "Pub/Sub enables you to create systems of event producers and consumers, called publishers and subscribers.",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "repository": "https://github.com/pownthep/playground",
+  "publishConfig": {
+    "@pownthep:registry": "https://npm.pkg.github.com/pownthep"
+  },
+  "scripts": {
+    "dev:package": "nodemon",
+    "build:package": "tsc --project tsconfig.cjs.json && tsc --project tsconfig.es.json"
+  },
+  "keywords": [],
+  "author": "Pownthep Laokhunthot",
+  "license": "MIT",
+  "dependencies": {
+    "@tauri-apps/api": "^1.0.0-beta.8",
+    "socket.io": "^4.3.1",
+    "socket.io-client": "^4.3.2",
+    "websocket": "^1.0.34",
+    "ws": "^8.2.3"
+  },
+  "devDependencies": {
+    "@types/websocket": "^1.0.4",
+    "@types/ws": "^8.2.0",
+    "electron": "16.0.0",
+    "nodemon": "^2.0.14",
+    "typescript": "^4.4.4"
+  },
+  "files": [
+    "./lib/**/*"
+  ]
+}

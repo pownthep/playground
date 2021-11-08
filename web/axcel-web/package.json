@@ -1,0 +1,32 @@
+{
+  "name": "@pownthep/axcel-web",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "nodemon",
+    "build": "ts-node ./tools/build.ts",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.2.5",
+    "@mui/material": "^5.2.7",
+    "@radix-ui/react-icons": "^1.0.3",
+    "esbuild-plugin-inline-worker": "^0.1.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.8",
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "@vitejs/plugin-react": "^1.0.7",
+    "builtin-modules": "^3.2.0",
+    "esbuild-sass-plugin": "^2.0.1",
+    "preact": "^10.6.4",
+    "sass": "^1.45.2",
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2",
+    "vite-plugin-commonjs-externals": "^0.1.1"
+  }
+}

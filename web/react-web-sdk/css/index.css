@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-color: #333;
+  --background-color: #eee;
+  --progress-background-color: rgb(207, 207, 207);
+  --progress-value-color: #0093e9;
+  --progress-value-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  --link-color: cornflowerblue;
+  --titlebar-btn-fill-color: rgb(12, 8, 8);
+  --titlebar-btn-hover-fill-color: white;
+  --titlebar-btn-hover-bg-color: #333;
+  --btn-bg-color: rgba(207, 207, 207, 0.863);
+  --scroll-bar-thumb-color: rgba(207, 207, 207, 0.863);
+  --border-color: transparent;
+  --gradient-bg: #eee;
+}
+
+/* 2 */
+[data-theme="dark"] {
+  --font-color: #eee;
+  --background-color: rgb(0, 0, 0);
+  --progress-background-color: rgba(255, 255, 255, 0.1);
+  --progress-value-color: #4158d0;
+  --progress-value-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+  --link-color: lightblue;
+  --titlebar-btn-fill-color: #eee;
+  --titlebar-btn-hover-fill-color: black;
+  --titlebar-btn-hover-bg-color: #eee;
+  --btn-bg-color: rgba(255, 255, 255, 0.15);
+  --btn-hover-bg-color: rgba(255, 255, 255, 0.5);
+  --scroll-bar-thumb-color: white;
+  --border-color: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+  --gradient-bg: rgb(0, 0, 0, 0.98);
+}
+
+[data-theme="amoled"] {
+  --font-color: #eee;
+  --background-color: black;
+  --link-color: lightblue;
+  --titlebar-btn-fill-color: white;
+  --titlebar-btn-hover-fill-color: black;
+  --titlebar-btn-hover-bg-color: white;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  background-color: transparent;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+    background-color: transparent;
+  }
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  color: var(--font-color);
+  position: relative;
+  background-color: transparent;
+}
+
+a {
+  color: var(--link-color);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--scroll-bar-thumb-color);
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+}
+
+pre {
+  word-break: break-all;
+  word-wrap: break-word;
+}

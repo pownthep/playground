@@ -1,0 +1,31 @@
+.titlebar-btn {
+  -webkit-app-region: no-drag;
+  background-color: transparent;
+  border: none;
+  width: 52px;
+  height: 28px;
+}
+
+.titlebar-btn-close:hover {
+  background-color: red;
+}
+
+.titlebar-btn-close:hover svg {
+  fill: white;
+}
+
+.titlebar-btn-maximize:hover {
+  background-color: rgba(54, 54, 54, 0.26);
+}
+
+.titlebar-btn-maximize:hover svg {
+  fill: white;
+}
+
+.titlebar-btn-minimize:hover {
+  background-color: rgba(54, 54, 54, 0.26);
+}
+
+.titlebar-btn-minimize:hover svg {
+  fill: white;
+}

@@ -1,0 +1,23 @@
+# Dependencies
+/node_modules
+
+# Demo purpose
+yarn.lock
+
+# Build output
+/dist
+
+# Errors logs
+yarn-error.log
+
+# pnpm
+pnpm-lock.yaml
+
+
+# snapshot
+snapshot
+
+# tools
+/tools/*.js
+
+cache

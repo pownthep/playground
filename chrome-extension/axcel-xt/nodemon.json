@@ -1,0 +1,7 @@
+{
+  "watch": ["src", "public", "C:/Users/pownthep/Documents/GitHub/playground/web/react-web-sdk"],
+  "ignore": ["src/**/*.test.ts"],
+  "ext": "scss, css, tsx,ts,mjs,js,json,graphql",
+  "exec": "yarn build",
+  "legacyWatch": true
+}

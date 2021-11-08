@@ -1,0 +1,11 @@
+{
+    "watch": [
+        "src"
+    ],
+    "ignore": [
+        "src/**/*.test.ts"
+    ],
+    "ext": "ts,tsx,mjs,js,json,graphql",
+    "exec": "yarn build",
+    "legacyWatch": true
+}

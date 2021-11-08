@@ -1,0 +1,13 @@
+.download-timer-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 4px;
+  column-gap: 4px;
+  font-size: 12px;
+  width: 30%;
+}
+
+.download-timer-label {
+  text-align: center;
+}

@@ -1,0 +1,11 @@
+# Dependencies
+/node_modules
+
+# Demo purpose
+yarn.lock
+
+# Build output
+/lib
+
+# Errors logs
+yarn-error.log

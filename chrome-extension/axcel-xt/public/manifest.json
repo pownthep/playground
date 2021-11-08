@@ -1,0 +1,20 @@
+{
+  "name": "Axcel XT",
+  "description": "A companion browser extension for Axcel Desktop",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "app.png",
+    "48": "app.png",
+    "128": "app.png"
+  },
+  "action": {
+    "default_popup": "index.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": ["webRequest", "downloads", "cookies", "nativeMessaging", "tabs", "storage", "background"],
+  "host_permissions": ["https://*/*", "http://*/*"]
+}

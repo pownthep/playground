@@ -1,0 +1,42 @@
+{
+  "name": "@pownthep/electron-sdk",
+  "version": "1.0.0",
+  "description": "Electron Desktop App SDK",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "repository": "https://github.com/pownthep/playground",
+  "publishConfig": {
+    "@pownthep:registry": "https://npm.pkg.github.com/pownthep"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:package": "nodemon",
+    "build:package": "tsc --project tsconfig.cjs.json && tsc --project tsconfig.es.json"
+  },
+  "keywords": [],
+  "author": "Pownthep Laokhunthot",
+  "license": "ISC",
+  "dependencies": {
+    "@getstation/electron-google-oauth2": "^2.1.0",
+    "@pownthep/pubsub": "^1.0.0",
+    "electron": "16.0.0",
+    "electron-link": "^0.6.0",
+    "electron-log": "^4.4.1",
+    "electron-mksnapshot": "16.0.0",
+    "electron-releases": "^3.883.0",
+    "electron-store": "^8.0.1",
+    "electron-util": "0.17.2",
+    "node-fetch": "^3.0.0",
+    "node-html-parser": "^4.1.5",
+    "web-ext-native-msg": "^5.2.1",
+    "webtorrent": "^1.5.8"
+  },
+  "devDependencies": {
+    "@types/webtorrent": "^0.109.2",
+    "nodemon": "^2.0.14",
+    "typescript": "^4.4.4"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}

@@ -1,0 +1,37 @@
+.icon-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin: 2px;
+  cursor: pointer;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 8px;
+  padding-right: 8px;
+  user-select: none;
+  box-shadow: 0 10px 40px -10px var(--btn-bg-color);
+  background-color: var(--btn-bg-color);
+  transition: all 200ms ease-out;
+  font-size: 12px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.icon-btn-disabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.icon-btn:hover {
+  background-color: var(--btn-hover-bg-color);
+}
+
+.icon-icon {
+  width: 20px;
+  margin-right: 8px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

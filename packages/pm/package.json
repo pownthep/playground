@@ -1,0 +1,26 @@
+{
+  "name": "@pownthep/pm",
+  "version": "1.0.0",
+  "description": "PM is a process manager for web and desktop apps.",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "repository": "https://github.com/pownthep/playground",
+  "publishConfig": {
+    "@pownthep:registry": "https://npm.pkg.github.com/pownthep"
+  },
+  "scripts": {
+    "dev:package": "nodemon",
+    "build:package": "tsc --project tsconfig.cjs.json && tsc --project tsconfig.es.json"
+  },
+  "keywords": [],
+  "author": "Pownthep Laokhunthot",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "16.0.0",
+    "nodemon": "^2.0.14",
+    "typescript": "^4.4.4"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}

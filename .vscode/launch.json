@@ -1,0 +1,35 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Attach to Launcher",
+      "port": 9223,
+      "request": "attach",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "pwa-node"
+    },
+    {
+      "name": "Debug services/manhwa",
+      "program": "${workspaceFolder}/dekstop/launcher/dist/main/services/manhwa.js",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "pwa-node"
+    },
+    {
+      "name": "Debug Launcher",
+      "program": "${workspaceFolder}/desktop/launcher/dist/main/main.js",
+      "request": "launch",
+      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "pwa-node"
+    },
+    {
+      "type": "pwa-chrome",
+      "request": "launch",
+      "name": "Debug Lime",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/web/lime",
+      "cwd": "${workspaceFolder}/web/lime"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+.rdx-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  border-radius: 10px;
+  margin: 2px;
+  cursor: pointer;
+  padding: 20px;
+  user-select: none;
+  box-shadow: 0 10px 40px -10px var(--btn-bg-color);
+  background-color: var(--btn-bg-color);
+  transition: all 200ms ease-in-out;
+  font-size: 14px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.rdx-btn-disabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.rdx-btn:hover {
+  background-color: var(--btn-hover-bg-color);
+  color: black;
+}
+
+.rdx-icon {
+  width: 20px;
+  margin-right: 8px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

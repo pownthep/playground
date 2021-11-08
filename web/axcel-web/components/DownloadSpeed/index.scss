@@ -1,0 +1,17 @@
+.download-speed-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 4px;
+  column-gap: 4px;
+  font-size: 12px;
+  width: 60%;
+}
+
+.total-downloaded {
+  text-align: center;
+}
+
+.download-speed {
+  text-align: center;
+}

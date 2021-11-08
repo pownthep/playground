@@ -1,0 +1,49 @@
+{
+  "name": "@pownthep/axcel-desktop",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "license": "MIT",
+  "repository": "https://github.com/pownthep/playground",
+  "publishConfig": {
+    "@pownthep:registry": "https://npm.pkg.github.com/pownthep"
+  },
+  "author": {
+    "name": "Pownthep Laokhunthot",
+    "email": "pownthep.dev@gmail.com",
+    "url": "https://github.com/pownthep"
+  },
+  "description": "Download Accelerator",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "electron dist/main/main.js",
+    "build": "ts-node ./tools/build.ts",
+    "prod-package": "yarn build && yarn snapshot && ts-node ./tools/package.ts",
+    "dev-package": "yarn build && ts-node ./tools/package.ts",
+    "snapshot": "ts-node ./tools/create-snapshot.ts",
+    "blob": "node ../../node_modules/electron-mksnapshot/mksnapshot.js ./snapshot/snapshot.js -- --out_dir 'C:/Users/pownthep/Documents/GitHub/playground/desktop/axcel-desktop/snapshot'"
+  },
+  "devDependencies": {
+    "@josephuspaye/chrome-native-bridge": "^0.3.0",
+    "@pownthep/electron-link": "1.0.0",
+    "@pownthep/electron-sdk": "^1.0.0",
+    "@pownthep/pm": "^1.0.0",
+    "@pownthep/pubsub": "^1.0.0",
+    "@types/chrome": "^0.0.174",
+    "@types/node": "16.9.1",
+    "axios": "^0.24.0",
+    "axios-cookiejar-support": "^2.0.3",
+    "chrome-native-messaging": "^0.2.0",
+    "electron": "16.0.0",
+    "electron-builder": "22.11.11",
+    "electron-deeplink": "^1.0.9",
+    "electron-store": "^8.0.1",
+    "esbuild": "latest",
+    "move-file": "^3.0.0",
+    "mv": "^2.1.1",
+    "node-native-messaging-host": "^1.0.5",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0",
+    "typescript": "4.4.3",
+    "v8-compile-cache": "^2.3.0"
+  }
+}

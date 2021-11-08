@@ -1,0 +1,7 @@
+{
+  "name": "com.pownthep.axcel",
+  "description": "Download Accelerator",
+  "path": "C:\\Users\\pownthep\\Desktop\\axcel-desktop\\src-tauri\\target\\release\\axcel-desktop.exe",
+  "type": "stdio",
+  "allowed_origins": ["chrome-extension://ipbobmcpiodmllbgbjpalkdkjelicmcl/"]
+}
